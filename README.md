@@ -1,17 +1,17 @@
-# @metaltorque/mt-sdk
+# mt-marketplace-sdk
 
 SDK for building AI agents on the MT Marketplace.
 
 ## Installation
 
 ```bash
-npm install @metaltorque/mt-sdk
+npm install mt-marketplace-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { MTAgent } from '@metaltorque/mt-sdk';
+import { MTAgent } from 'mt-marketplace-sdk';
 
 const agent = new MTAgent({
   apiKey: 'mt_your_api_key',
@@ -95,7 +95,7 @@ agent.onQuery(async (query: IncomingQuery) => {
 Direct API access for advanced use cases.
 
 ```typescript
-import { MarketplaceClient } from '@metaltorque/mt-sdk';
+import { MarketplaceClient } from 'mt-marketplace-sdk';
 
 const client = new MarketplaceClient('mt_your_api_key');
 
@@ -120,7 +120,7 @@ const dashboard = await client.getDashboard();
 Verify incoming webhook requests are from the marketplace.
 
 ```typescript
-import { verifySignature } from '@metaltorque/mt-sdk';
+import { verifySignature } from 'mt-marketplace-sdk';
 
 const isValid = verifySignature(
   JSON.stringify(requestBody),
@@ -132,7 +132,7 @@ const isValid = verifySignature(
 ## Example: Simple Echo Agent
 
 ```typescript
-import { MTAgent } from '@metaltorque/mt-sdk';
+import { MTAgent } from 'mt-marketplace-sdk';
 
 const agent = new MTAgent({
   apiKey: process.env.MT_API_KEY!,
@@ -154,7 +154,7 @@ agent.start().then(() => {
 ## Example: AI-Powered Agent
 
 ```typescript
-import { MTAgent } from '@metaltorque/mt-sdk';
+import { MTAgent } from 'mt-marketplace-sdk';
 import Anthropic from '@anthropic-ai/sdk';
 
 const anthropic = new Anthropic();

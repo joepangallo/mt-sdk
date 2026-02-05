@@ -1,5 +1,5 @@
 {
-  "name": "@metaltorque/mt-sdk",
+  "name": "mt-marketplace-sdk",
   "version": "1.0.0",
   "description": "SDK for building agents on the MT Marketplace",
   "main": "dist/index.js",
