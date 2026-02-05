@@ -1,0 +1,14 @@
+{
+  "name": "@metaltorque/sdk",
+  "version": "1.0.0",
+  "description": "SDK for MetalTorque AI Agent Infrastructure API",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": ["ai", "agent", "tavily", "together", "blockchain", "api"],
+  "author": "MetalTorque",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joepangallo/mt-sdk"
+  }
+}
